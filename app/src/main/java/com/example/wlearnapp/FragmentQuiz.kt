@@ -15,25 +15,13 @@ import kotlinx.android.synthetic.main.fragment_fragment_quiz.view.*
 
 
 class FragmentQuiz : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-
-
-        val view: View = inflater!!.inflate(R.layout.fragment_quiz_game, container, false)
-
-        view.btn_start.setOnClickListener { view ->
-            Log.d("btnStart", "Selected")
-        }
-
-        // Return the fragment view/layout
-        return view
-    }
-
-    companion object {
-        fun newInstance(): FragmentQuiz {
-            return FragmentQuiz()
-        }
-    }
+    override fun onCreateView(
+    inflater: LayoutInflater, container: ViewGroup?,
+    savedInstanceState: Bundle?
+): View? {
+    // Inflate the layout for this fragment
+    return inflater.inflate(R.layout.fragment_fragment_quiz ,container, false)
+}
 
 
 
