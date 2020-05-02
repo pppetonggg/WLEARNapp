@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.wlearnapp.databinding.ActivityOptionBinding
-import com.google.android.gms.common.util.DataUtils
 import kotlinx.android.synthetic.main.activity_option.*
 
 class OptionActivity : AppCompatActivity() {
@@ -27,7 +26,7 @@ class OptionActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btn_quiz.setOnClickListener{
-            val intent = Intent(this,LoginActivity::class.java)
+            val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/quiz_navigation"
+    app:startDestination="@id/quizFragment">
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.wlearnapp.QuizFragment"
+        android:label="QuizFragment" >
+        <action
+            android:id="@+id/action_quizFragment_to_quizGameFragment"
+            app:destination="@id/quizGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizGameFragment"
+        android:name="com.example.wlearnapp.QuizGameFragment"
+        android:label="QuizGameFragment" >
+        <action
+            android:id="@+id/action_quizGameFragment_to_quizWonFragment"
+            app:destination="@id/quizWonFragment"
+            app:popUpTo="@id/quizGameFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_quizGameFragment_to_quizLostFragment"
+            app:destination="@id/quizLostFragment"
+            app:popUpTo="@id/quizGameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizLostFragment"
+        android:name="com.example.wlearnapp.QuizLostFragment"
+        android:label="QuizLostFragment" >
+        <action
+            android:id="@+id/action_quizLostFragment_to_quizFragment"
+            app:destination="@id/quizFragment"
+            app:popUpTo="@id/quizFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizWonFragment"
+        android:name="com.example.wlearnapp.QuizWonFragment"
+        android:label="QuizWonFragment" >
+        <action
+            android:id="@+id/action_quizWonFragment_to_quizFragment"
+            app:destination="@id/quizFragment"
+            app:popUpTo="@id/quizFragment" />
+    </fragment>
+</navigation>
