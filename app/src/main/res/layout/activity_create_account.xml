@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fef8f4"
+    tools:context=".CreateAccountActivity">
+
+    <TextView
+        android:id="@+id/tv_create_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center_horizontal"
+        android:text="Create Account"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:hint="@string/first_name"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/input_style"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <EditText
+        android:id="@+id/et_last_name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_style"
+        android:layout_height="60dp"
+        android:layout_width="400dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_first_name"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_style"
+        android:layout_height="60dp"
+        android:layout_width="400dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_last_name"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_style"
+        android:layout_height="60dp"
+        android:layout_width="400dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_email"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <EditText
+        android:id="@+id/et_password_confirm"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_style"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/et_password_confirm"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="20dp"
+        android:text="@string/create_act"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+
+
+</RelativeLayout>
