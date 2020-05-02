@@ -9,13 +9,13 @@ class MyPagerAdapter(fm:FragmentManager):FragmentPagerAdapter(fm) {
         return when(position){
             0->{
                 //create 3 fragments
-                FragmentLesson()
+                ExerciseOne()
             }
             1->{
-                FragmentExercise()
+                ExerciseTwo()
             }
             else->{
-                return FragmentQuiz()
+                return ExerciseThree()
             }
 
             //this for tab position
@@ -29,10 +29,10 @@ class MyPagerAdapter(fm:FragmentManager):FragmentPagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence? {
         return when(position){
-            0->"Lesson"
-            1->"Exercise"
+            0->"Exercise1"
+            1->"Exercise2"
             else->{
-                return "Quiz"
+                return "Exercise3"
             }
             //set tab titles
         }

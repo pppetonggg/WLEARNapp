@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textSize="14dp"
+                android:textSize="10dp"
                 tools:text="Internet Protocol(IP)\nTransport Control Protocol/User Datagram Protocol(UDP)\nInternet Control Message Protoccol" />
         </LinearLayout>
     </LinearLayout>

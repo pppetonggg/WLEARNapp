@@ -11,7 +11,7 @@ class FragmentTab : AppCompatActivity() {
         setContentView(R.layout.activity_fragment_tab)
 
         //create adapter class already
-        toolBar.setTitle("Tab Layout")
+        toolBar.setTitle("Exercise")
         setSupportActionBar(toolBar)
 
         val fragmentAdapter = MyPagerAdapter(supportFragmentManager)

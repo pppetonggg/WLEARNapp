@@ -10,14 +10,14 @@ import android.view.ViewGroup
 /**
  * A simple [Fragment] subclass.
  */
-class FragmentLesson : Fragment() {
+class ExerciseThree : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment_lesson, container, false)
+        return inflater.inflate(R.layout.fragment_exercise_three, container, false)
     }
 
 

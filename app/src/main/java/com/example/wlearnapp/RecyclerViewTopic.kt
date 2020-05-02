@@ -1,11 +1,13 @@
 package com.example.wlearnapp
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -17,7 +19,6 @@ import kotlinx.android.synthetic.main.activity_recycler_view_topic.*
 class RecyclerViewTopic : AppCompatActivity(), OnTopicItemClickListener {
     private lateinit var binding: ActivityRecyclerViewTopicBinding
     private lateinit var topiclist: ArrayList<Topic>
-    private lateinit var editTextSearch : EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_recycler_view_topic)
@@ -30,7 +31,6 @@ class RecyclerViewTopic : AppCompatActivity(), OnTopicItemClickListener {
         topicRecycler.adapter = RecyclerViewAdapter(topiclist,this)
 
     }
-
 
     fun addTopic(){
         topiclist.add(Topic( "TCP/IP",
@@ -52,8 +52,10 @@ class RecyclerViewTopic : AppCompatActivity(), OnTopicItemClickListener {
 
     override fun onItemClick(item: Topic, position: Int) {
         //Toast.makeText(this,item.topics, Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, FragmentTab::class.java)
-        intent.putExtra("CARNAME",item.topics)
+        val intent = Intent(this, OptionActivity::class.java)
+        intent.putExtra("TOPICNAME",item.topics)
+        intent.putExtra("TOPICDES",item.description)
+        //intent.putExtra("IMAGE",item.image.toString())
         startActivity(intent)
     }
 }

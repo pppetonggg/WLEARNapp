@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FragmentTab"></activity>
+        <activity android:name=".LessonActivity"></activity>
+        <activity android:name=".OptionActivity" />
+        <activity
+            android:name=".FragmentTab"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".RecyclerViewTopic">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
