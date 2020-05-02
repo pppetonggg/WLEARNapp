@@ -54,6 +54,33 @@ class QuizGameFragment : Fragment() {
         Question("In Selective Repeat ARQ, if 5 is the number of bits for the sequence number, then the maximum size of the send window must be ",
             arrayListOf("16", "15", "31", "1"))
     )
+        // Routing protocol
+    var questions = arrayListOf<Question>(
+        Question("A network administrator uses the RIP routing protocol to implement routing within an autonomous system. What are characteristics of this protocol?",
+            arrayListOf("It periodically sends complete routing tables to all connected devices.", "It displays an actual map of the network topology.", "It offers rapid convergence in large networks.", "It is beneficial in complex and hierarchically designed networks.")),
+        Question("What is the first step OSPF and IS-IS routers take in building a shortest path first database?",
+            arrayListOf("Learn about directly connected networks", "Send hello to discover neighbors and form adjacencies", "Choose successors and feasible successors to populate the topology table", "Flood LSPs to all neighbors informing them of all known networks and their link states")),
+        Question("Which one statements is true regarding link-state routing protocols?",
+            arrayListOf("They are aware of the complete network topology.", "They do not include subnet masks in their routing updates.", "They rely on decreasing hop counts to determine the best path.", "They pass their entire routing tables to their directly connected neighbors only.")),
+        Question("A network administrator needs to configure a single router to load-balance the traffic over unequal cost paths. Which routing protocol should the administrator use?",
+            arrayListOf("EIGRP", "OSPF", "RIPv1", "RIPv2")),
+        Question("What should be considered when troubleshooting a problem with the establishment of neighbor relationships between OSPF routers?",
+            arrayListOf("Interface network type mismatch", "Administrative distance mismatch", "No loopback interface configured", "Gateway of last resort not redistributed"))
+    )
+
+    // TCP congestion control
+    var questions = arrayListOf<Question>(
+        Question("The growth of congestion window takes place _________.",
+            arrayListOf("Up to the size of receiver’s window", "Infinitely", "Up to Threshold", "Up to timeout")),
+        Question("In the congestion avoidance algorithm, the size of the congestion window increases ____________ until congestion is detected.",
+            arrayListOf("additively", "exponentially", "multiplicatively", "suddenly")),
+        Question("In the slow-start algorithm, the size of the congestion window increases __________ until it reaches a threshold.",
+            arrayListOf("exponentially", "additively", "multiplicatively", "suddenly")),
+        Question("Retransmission of packets must not be done when _________.",
+            arrayListOf("Packet is error-free", "Packet is lost", "Packet is corrupted", "Packet is needed")),
+        Question("The technique of ________ refers to a congestion control mechanism in which a congested node stops receiving data from the immediate upstream node or nodes.",
+            arrayListOf("backpressure", "chock packet", "implicit signaling", "explicit signaling"))
+    )
     */
 
     private fun randomQuestion() {
