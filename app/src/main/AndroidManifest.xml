@@ -12,11 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".QuizActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".LessonActivity" />
         <activity android:name=".OptionActivity" />
@@ -24,11 +19,11 @@
             android:name=".FragmentTab"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".RecyclerViewTopic">
-          <!--  <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
         <activity android:name=".ForgotPasswordActivity" />
         <activity
