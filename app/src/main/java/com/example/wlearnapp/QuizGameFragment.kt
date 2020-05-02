@@ -43,17 +43,26 @@ class QuizGameFragment : Fragment() {
     /*
     // ARQs
     var questions = arrayListOf<Question>(
+<<<<<<< HEAD
         Question("In the _________ Protocol, the sender sends one frame, stops until it receives confirmation from the receiver, and then sends the next frame.",
             arrayListOf("Stop-and-Wait", "Simplest", "Go-Back-N ARQ", "Selective-Repeat ARQ")),
         Question("In the _________ Protocol, if no acknowledgment for a frame has arrived, we resend all outstanding frames.",
             arrayListOf("Go-Back-N ARQ", "Stop-and-Wait", "Simplest", "Selective-Repeat ARQ")),
         Question("In the _________ Protocol we avoid unnecessary transmission by sending only frames that are corrupted.",
+=======
+        Question("In the _____ Protocol, the sender sends one frame, stops until it receives confirmation from the receiver, and then sends the next frame.",
+            arrayListOf("Stop-and-Wait", "Simplest", "Go-Back-N ARQ", "Selective-Repeat ARQ")),
+        Question("In the _________Protocol, if no acknowledgment for a frame has arrived, we resend all outstanding frames.",
+            arrayListOf("Go-Back-N ARQ", "Stop-and-Wait", "Simplest", "Selective-Repeat ARQ")),
+        Question("In the _________ protocol we avoid unnecessary transmission by sending only frames that are corrupted.",
+>>>>>>> e4e42cbb1c18717836c2c983652c68355f2cd9aa
             arrayListOf("Selective-Repeat ARQ", "Go-Back-N ARQ", "Stop-and-Wait", "Simplest")),
         Question("Both Go-Back-N and Selective-Repeat Protocols use a _________.",
             arrayListOf("Sliding window", "Sliding frame", "Sliding packet", "Sliding protocol")),
         Question("In Selective Repeat ARQ, if 5 is the number of bits for the sequence number, then the maximum size of the send window must be ",
             arrayListOf("16", "15", "31", "1"))
     )
+<<<<<<< HEAD
         // Routing protocol
     var questions = arrayListOf<Question>(
         Question("A network administrator uses the RIP routing protocol to implement routing within an autonomous system. What are characteristics of this protocol?",
@@ -81,6 +90,8 @@ class QuizGameFragment : Fragment() {
         Question("The technique of ________ refers to a congestion control mechanism in which a congested node stops receiving data from the immediate upstream node or nodes.",
             arrayListOf("backpressure", "chock packet", "implicit signaling", "explicit signaling"))
     )
+=======
+>>>>>>> e4e42cbb1c18717836c2c983652c68355f2cd9aa
     */
 
     private fun randomQuestion() {
